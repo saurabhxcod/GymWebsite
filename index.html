@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness World</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Fitness <span>World</span></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#plans">Pricing</a></li>
+            <li><a href="#bmi-calculator">BMI</a></li>
+            <li><a href="#review">Review</a></li>
+        </ul>
+
+        <div class="top-btn">
+            <a href="#contact" class="nav-btn">Join Us</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+
+    <section id="home" class="home">
+        <div class="home-content" data-aos="zoom-in">
+            <h3>Build Your</h3>
+            <h1>Dream Physique</h1>
+            <h3><span class="multiple-text"></span></h3>
+            <p>"Unlock Your Full Potential with Every Rep.
+                A Gym Built for Your Strength, Your Progress, Your Success."
+                
+            </p>
+
+            <a href="#" class="btn">Join Us</a>
+        </div>
+
+        <div class="home-img" data-aos="zoom-in">
+            <img src="assets/h12222.png" alt="HeroImage">
+        </div>
+    </section>
+
+    <!-- services Section Code -->
+
+    <section class="services" id="services">
+
+        <h2 class="heading" data-aos="zoom-in-down">Our <span>Services</span></h2>
+
+        <div class="services-content" data-aos="zoom-in-up">
+            <div class="row">
+                <img src="assets/image1.jpg" alt="">
+
+                <h4>Physical Fitness</h4>
+            </div>
+
+            <div class="row">
+                <img src="assets/image2.jpg" alt="">
+
+                <h4>Weight Gain</h4>
+            </div>
+
+            <div class="row">
+                <img src="assets/image3.jpg" alt="">
+
+                <h4>Strength Training</h4>
+            </div>
+
+            <div class="row">
+                <img src="assets/image4.jpg" alt="">
+
+                <h4>Fat Lose</h4>
+            </div>
+
+            <div class="row">
+                <img src="assets/image5.jpg" alt="">
+
+                <h4>Weightlifting</h4>
+            </div>
+
+            <div class="row">
+                <img src="assets/about.jpg" alt="">
+
+                <h4>Running</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-img" data-aos="zoom-in-down">
+            <img src="assets/about.jpg" alt="">
+        </div>
+
+        <div class="about-content" data-aos="zoom-in-up">
+            <h2 class="heading">Why Choose Us?</h2>
+            <p>Our diverse membership base creates a friendly and supportive atmosphere, where you can make friends and
+                stay motivated.</p>
+            <p>Unlock your potential with our expert Personal Trainers.</p>
+            <p>Elevate your fitness with practice sessions.</p>
+            <p>We provide Supportive management, for your fitness success.</p>
+            <a href="#" class="btn">Book A Free Class</a>
+        </div>
+    </section>
+
+
+
+    <!-- Pricing Section Code -->
+
+    <section class="plans" id="plans">
+        <h2 class="heading" data-aos="zoom-in-down">Our <span>Plans</span></h2>
+
+
+        <div class="plans-content" data-aos="zoom-in-up">
+            <div class="box">
+                <h3>BASIC</h3>
+                <h2><span>₹1199/Month</span></h2>
+                <ul>
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                </ul>
+                <a href="#">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+            <div class="box">
+                <h3>PRO</h3>
+                <h2><span>₹1999/Month</span></h2>
+                <ul>
+                    <li>Pro GYMS</li>
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                </ul>
+                <a href="#">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+            <div class="box">
+                <h3>PREMIUM</h3>
+                <h2><span>₹3999/Month</span></h2>
+                <ul>
+                    <li>ELITE Gyms & Classes</li>
+                    <li>Pro GYMS</li>
+                    <li>Smart workout plan</li>
+                    <li>At home workouts</li>
+                    <li>Personal Training</li>
+                </ul>
+                <a href="#">
+                    Join Now
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BMI Section -->
+<section id="bmi-calculator" class="bmi-calculator"  >
+    <h2 class="heading"  data-aos="zoom-in-down">Calculate Your <span id="bmi-color">BMI</span></h2>
+    <div class="bmi-form"  data-aos="zoom-in-up">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kg" required>
+        
+        <label for="height">Height (m):</label>
+        <input type="number" step="0.01" id="height" placeholder="Enter height in meters" required>
+        
+        <button onclick="calculateBMI()"  id="button-color">Calculate BMI</button>
+        
+        <div id="bmi-result">
+            <h2>Your BMI: <span id="bmi-value"></span></h2>
+            <p id="bmi-category"></p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Review Section -->
+
+    <section id="review" class="review">
+        <div class="review-box">
+            <h2 class="heading" data-aos="zoom-in-down">Client Reviews</h2>
+
+            <div class="wrapper" data-aos="zoom-in-up">
+                <div class="review-item">
+                    <img src="assets/1.jpeg" alt="">
+                    <h2>Utkarsh</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>This gym is a fantastic place to achieve your fitness goals! With top-notch equipment, friendly trainers, and a clean, spacious environment, it keeps you motivated and comfortable during every workout.
+
+                    </p>
+                </div>
+
+                <div class="review-item">
+                    <img src="assets/2.avif" alt="">
+                    <h2>Ashmit</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>A clean, well-equipped gym with plenty of options for every fitness level! The trainers are approachable and knowledgeable, creating a supportive environment to help you succeed.</p>
+                </div>
+
+                <div class="review-item">
+                    <img src="assets/4.jpeg" alt="">
+                    <h2>Navya</h2>
+                    <div class="rating">
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                        <i class='bx bxs-star' id="star"></i>
+                    </div>
+                    <p>With a variety of classes and a positive atmosphere, this gym is ideal for women of all fitness levels. The staff is encouraging and always ready to help you feel strong and empowered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+
+        <p class="copyright">
+            &copy; Royal Fitness 2024 - All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 1400,
+        });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
